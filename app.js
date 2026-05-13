@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 /*
 <div id="parent">
     <div id="child1">
@@ -15,20 +18,18 @@ const parent = React.createElement(
   "div", // element name
   { id: "parent" }, // attributes
   [
-    React.createElement("div", { id: "child1" }, [
+    React.createElement("div", { id: "child1", key: "child1" }, [
       React.createElement("h1", { style: { color: "red" } }, "I'm a h1 tag"),
       React.createElement("h2", { style: { color: "red" } }, "I'm a h2 tag"),
     ]), // children or array of children,
-    React.createElement("div", { id: "child2" }, [
+    React.createElement("div", { id: "child2", key: "child2" }, [
       React.createElement("h1", { style: { color: "blue" } }, "I'm a h1 tag"),
       React.createElement("h2", { style: { color: "blue" } }, "I'm a h2 tag"),
     ]), // children or array of children
   ],
 );
 
-
 // JSX
-
 
 // const header = React.createElement(
 //   "h1",
