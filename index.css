@@ -25,22 +25,21 @@
   margin: 10px;
 }
 
+.restaurant-containers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .restaurant-card {
-  background-color: cadetblue;
+  border: 2px solid black;
+  margin: 5px;
   padding: 5px;
   width: 200px;
-  height: 300px;
-  margin: 5px;
-  border: 1px solid black;
 }
 
 .restaurant-card :hover {
   cursor: pointer;
-}
-
-.restaurant-containers {
-  display: flex;
-  flex-wrap: wrap;
+  border: 1px solid black;
 }
 
 .search {
@@ -51,10 +50,9 @@
 }
 
 .restaurant-logo {
+  /* border: 1px solid black; */
   width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background-color: #fff;
 }
-/* .restaurant-card {
-    background-color: "#7a757575" ;
-    border: 1px solid black;
-    width: 100px;
-} */

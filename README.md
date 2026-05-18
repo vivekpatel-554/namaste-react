@@ -54,6 +54,11 @@ https://github.com/namastedev/namaste-react
 - Functional Component  - New
     - A function which return a ReactElement/JSX code
     - {} using this we can add any javascript code
-    - {name}    = const Title = () => '<h1>Namste React using JSX </h1>'
-    - {name()}  = const Title = () => '<h1> Namste React using JSX </h1>'
-    - <name/>   = const Title = '<h1> Namste React using JSX </h1>'
+    - {name}    = const Title = () => h1 tag with msg
+    - {name()}  = const Title = () => h1 tag with msg
+    - <name/>   = const Title = h1 tag with msg
+
+# Props (Properties)
+- Passing argument to function
+- When you use .map then it should use key attribute 
+- never use index as a key - anti-pattern - It not recommended
